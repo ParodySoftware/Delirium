@@ -37,8 +37,13 @@
     <!-- A reference to the entire .NET Framework is automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EmptyClass.cs" />
+    <Compile Include="LoginManager\Identity.cs" />
+    <Compile Include="LoginManager\ILoginManager.cs" />
+    <Compile Include="LoginManager\LoginErrorEventArgs.cs" />
+    <Compile Include="LoginManager\LoginManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LoginManager\RedirectionType.cs" />
+    <Compile Include="LoginManager\SucceedEventArgs.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
